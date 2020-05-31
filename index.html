@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frizzbee</title>
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- override -->
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h1> Index des liens</h1>
-<h5>Chev Prathna</h5>
-<ul>
-    <li><a href ="https://github.com/Antharp/Prathnatest" target="_blank">GitHub </a></li>
-    <li><a href ="https://clever-curran-bd1b1b.netlify.com" target="_blank"> Netlify </a></li> 
-    <li><a href ="https://www.figma.com/file/JQuWPQY1EJHEv3MOa2ggE5/Untitled?node-id=0%3A1" target="_blank">Figma </a> </li>
-</ul>
+    <div class="container">
+        <div class="formul m-3">
+            <div class ="row boxtruc mt-5">
+                <div class="col-lg-6 col-md-0 col-sm-0 col-xl-6 img p-0 mobile">
+                    <img src="src/img1.jpg"  height="30%" class="responsive">  
+                
+                    </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 background p-0">
+                   <div class="text-center m-3 pt-4"> 
+                    <a href="/index.html">
+                       <img src="src/1x/Fichier 1.png" >
+                       </a>
+                        <h5 class="text-center p-3 "><p class="font-weight-bold subtitle">page de connexion</p></h6>
+
+                    </div>
+                        <form method="POST" name="inscription">
+
+                            <div class="form-group text-center pb-4">
+                                <label for="email"> <p class="font-weight-light align-middle subtitle"> Identifiant / e-mail   </p></label>
+                                <br>
+                                <input type="email" name="email"class="form-control-custom" id="username" >
+                            </div>
+                            <div class="form-group text-center" id="show_hide_password">
+                                <label for="password">   <p class="font-weight-light align-middle subtitle"> Mot de passe   </p></label>
+                                <br>
+                                <input type="password" class="form-control-custom" id="loginpassword"> 
+                                <a class="positionicon"name="password" href=""><i class="fas fa-eye"></i></a>
+                              </div>
+                              <div class="mdpnouv text-center mt-4">
+                              <a class="sup" href="mdpoublie.html">Mot de passe oublié</a>
+                              <br>
+                              <a class="sup" href="inscription.html">S'incrire</a>
+                            </div>
+                            <div class="text-center mt-4">
+                            <button class="boutonconnect font-weight-bold" type="submit" value="inscription">Se connecter</button>
+                            </div>
+                        </form>
+                        <br>
+                        <div class="valide text-center"  id="valide" ></div>
+                        <div class="error text-center"  id="erreur" ></div>
+                </div>
+            
+            </div>
+
+         </div>
+    </div>
 </body>
+
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>

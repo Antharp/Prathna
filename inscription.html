@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frizzbee</title>
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- override -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- MultiStep Form -->
+<div class="row">
+    
+        </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12">
+        <form id="msform" method="POST" name="inscription">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Informations principales</li>
+                <li>Login et mot de passe</li>
+                <li>Confirmation</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+
+                <a href="/index.html">
+                    <img src="src/1x/Fichier 1.png" >
+                    </a><br>
+
+                    <h2 class="fs-title mt-3">Inscription</h2>
+                    <h3 class="fs-subtitle">Dites-nous en plus !</h3>
+                <label for="nom"> <p class="font-weight-light align-middle subtitle"> Nom   </p></label> <br>
+                <input type="text" name="nom" class="form-control-custom " id="nom" name="nom"/> <br>
+
+                <label for="prenom"> <p class="font-weight-light align-middle subtitle mt-3"> Prénom   </p></label><br>
+                <input type="text" name="prenom"class="form-control-custom mb-3 " id="prenom" name="prenom"/><br>
+
+                <label for="email"> <p class="font-weight-light align-middle subtitle"> Adresse e-mail   </p></label><br>
+                <input type="email" name="email" class="form-control-custom mb-3 " id="mail" name="mail"/>
+                <br>
+                <input type="button" name="next" class="next action-button" value="Suivant"/>
+            </fieldset>
+            <fieldset>
+                <a href="/index.html">
+                    <img src="src/1x/Fichier 1.png" >
+                    </a><br>
+
+                <h2 class="fs-title mt-3">Inscription</h2>
+                <h3 class="fs-subtitle">Dites-nous en plus !</h3>
+                <label for="identifiant"> <p class="font-weight-light align-middle subtitle"> Identifiant   </p></label> <br>
+                <input type="text" name="identifiant" class="form-control-custom " name="login"id="login"/> <br>
+
+                <label for="mdp"> <p class="font-weight-light align-middle subtitle mt-3"> Mot de passe   </p></label><br>
+                <input type="password" name="mdp" class="form-control-custom mb-3 " name="mdp1" id="mdp1"/><br>
+
+                <label for="mdp2"> <p class="font-weight-light align-middle subtitle mt-3"> Confirmation de Mot de passe   </p></label><br>
+                <input type="password" name="mdp2" class="form-control-custom mb-3 " name="mdp2"id="mdp2"/><br>
+                <div id="mdpgestion"></div><br>
+                <!-- <div class="valide" id="goodmdp"></div><br> -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Précédent"/>
+                <input type="button" name="next" class="next action-button" value="Suivant"/>
+            </fieldset>
+            <fieldset>
+                <a href="/index.html">
+                    <img src="src/1x/Fichier 1.png" >
+                    </a><br>
+
+                <h2 class="fs-title mt-3">Inscription</h2>
+                <h3 class="fs-subtitle">Plus que deux clics !</h3>
+                <div class="mb-4 mt-5">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label " for="exampleCheck1" id="condi"><a href="conditions.html">Accepter les conditions d'utilisations </a></label>
+                </div>
+                <br>
+                <div class="text-center"  id="validation" ></div><br>
+                <input type="button" name="previous" class="previous action-button-previous" value="Précédent"/>
+                <input type="submit" name="submit" class="submit action-button" value="inscription"/>
+
+                
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/script3form.js"></script>
+<script src="js/script3mdp.js"></script>
+<script src="js/script3.js"></script>
+
+
+</html>
